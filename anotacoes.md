@@ -46,5 +46,18 @@ sudo nano pg_hba.conf
 ```
 nas ultimas linhas, adicionei:
 host all all 10.87.38.0/24
+---
 
+## configuração de serviço
 A senha do meu banco de dados é 4321
+- para criar um banco de dados, usamos o comando:
+```sql
+CREATE DATEBASE lojamax
+```
+- para visualizar os bancos:
+
+para visualizar os bancos:
+
+```bash
+\q
+```
