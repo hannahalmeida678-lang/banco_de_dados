@@ -22,6 +22,7 @@ para sair comando `\q`
 graph LR
 A[sudo -U postgres psql]--altenticação -->b[so funciona entrando dentro do proprio linux]
 ```
+# passo1
 ```mermaid
 graph LR
 A[sudo psql -h 127.0.0.1 -U postgres ]--altenticação -->b[funciona vindo de qualquer maquina, porém e necessario inserir a senha]
@@ -38,3 +39,9 @@ mostra de onde devo "escutar" as conections.
 - ctrl + w para buscar a linha precisa
 - se ficar localhost, somente meu pc acessa.
 "rede da sala: 10.87.38"
+
+# passo 2
+```bash
+sudo nano pg_hba.conf
+```
+nas ultimas
