@@ -44,4 +44,7 @@ mostra de onde devo "escutar" as conections.
 ```bash
 sudo nano pg_hba.conf
 ```
-nas ultimas
+nas ultimas linhas, adicionei:
+host all all 10.87.38.0/24
+
+A senha do meu banco de dados é 4321
