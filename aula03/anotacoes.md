@@ -61,3 +61,6 @@ para visualizar os bancos:
 ```bash
 \q
 ```
+servidor: 192.168.10.94
+user: root
+porta: 2222
