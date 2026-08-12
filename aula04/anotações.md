@@ -1,4 +1,4 @@
-<!-- ### comando para apagar um banco de dados
+ ### comando para apagar um banco de dados
 ```sql
 DROP DATABASE lojamax;
 ```
