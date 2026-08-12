@@ -19,14 +19,14 @@ erDiagram
 PARA CRIar a tabela utilizamos oso comandos abaixos
 
 ```sql
-TE TABLE produtos(
+CREATE TABLE produtos(
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     preço NUMERIC(10,2) NOT NULL,
     estoque INT NOT NULL DEFAULT 0
 );
 ``` --> criando uma tabela
-- para inserir dados na tabela, comamdo:
+-- para inserir dados na tabela, comamdo:
 ```sql
 INSERT INTO produtos(nome,preço,estoque)
 VALUES('iphone 17','10000.00','15');
