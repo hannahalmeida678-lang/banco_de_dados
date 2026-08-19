@@ -14,3 +14,5 @@
 -- SELECT * FROM produtos;
 
 DELETE FROM produtos WHERE id=2;
+
+SELECT id FROM produtos
