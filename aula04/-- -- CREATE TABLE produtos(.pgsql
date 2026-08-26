@@ -16,3 +16,9 @@
 DELETE FROM produtos WHERE id=2;
 
 SELECT id FROM produtos
+
+
+SELECT * FROM produtos WHERE estoque <  11; 
+SELECT nome,preço FROM produtos 
+
+ORDER BY preço DESC;
