@@ -96,14 +96,9 @@ SELECT
  C2. O valor imobilizado de um produto não está gravado na tabela: ele precisa ser calculado (preço x estoque). Crie a coluna calculada valor_em_estoque e mostre os 5 produtos com maior valor imobilizado, exibindo nome, preço, estoque e o valor calculado
 
 ```sql
-SELECT
-    nome,
-    preco,
-    estoque,
-    preco * estoque AS valor_em_estoque
-FROM produtos
-ORDER BY valor_em_estoque DESC
-LIMIT 5;
+ SELECT SUM(preco * estoque) 
+AS total_faturamento_por_produto 
+FROM produtos;
 ```
 
 C3. Compare o resultado de C2 com o produto mais caro que apareceu em A3. É o mesmo item? Escreva duas linhas explicando o que essa comparação revela sobre o estoque da loja.
