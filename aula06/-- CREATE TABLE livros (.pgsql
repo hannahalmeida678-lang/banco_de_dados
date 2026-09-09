@@ -1,0 +1,49 @@
+-- CREATE TABLE livros (
+--     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+--     nome VARCHAR(100) NOT NULL,
+--     autor VARCHAR(100) NOT NULL,
+--     genero VARCHAR(100) NOT NULL,
+--     preco DECIMAL(5,2) NOT NULL,
+--     estoque INT NOT NULL,
+--     ano_publicacao INT NOT NULL
+-- );
+
+-- INSERT INTO livros (nome, autor, genero, preco, estoque, ano_publicacao)
+-- VALUES
+-- ('Dom Casmurro', 'Machado de Assis', 'Romance', '39.90', '12', '1899'),
+-- ('O Cortiço', 'Aluísio Azevedo', 'Romance', '34.90', '8', '1890'),
+-- ('Vidas Secas', 'Graciliano Ramos', 'Romance', '42.90', '15', '1938'),
+-- ('Capitães da Areia', 'Jorge Amado', 'Romance', '44.90', '10', '1937'),
+-- ('A Hora da Estrela', 'Clarice Lispector', 'Drama', '36.90', '7', '1977'),
+-- ('O Hobbit', 'J. R. R. Tolkien', 'Fantasia', '49.90', '20', '1937'),
+-- ('Harry Potter e a Pedra Filosofal', 'J. K. Rowling', 'Fantasia', '59.90', '18', '1997'),
+-- ('O Pequeno Príncipe', 'Antoine de Saint-Exupéry', 'Fantasia', '29.90', '25', '1943'),
+-- ('A Ilha do Tesouro', 'Robert Louis Stevenson', 'Aventura', '32.90', '9', '1883'),
+-- ('Frankenstein', 'Mary Shelley', 'Terror', '37.90', '11', '1818'),
+-- ('Sherlock Holmes', 'Arthur Conan Doyle', 'Mistério', '41.90', '6', '1887'),
+-- ('Alice no País das Maravilhas', 'Lewis Carroll', 'Fantasia', '31.90', '14', '1865'),
+-- ('O Senhor dos Anéis', 'J. R. R. Tolkien', 'Fantasia', '79.90', '13', '1954'),
+-- ('Percy Jackson e o Ladrão de Raios', 'Rick Riordan', 'Fantasia', '45.90', '16', '2005'),
+-- ('Coraline', 'Neil Gaiman', 'Fantasia/Terror', '39.90', '5', '2002');
+
+-- SELECT * FROM livros LIMIT 10
+
+-- SELECT nome, autor, preco
+-- FROM livros;
+
+-- SELECT DISTINCT genero
+-- FROM livros
+-- ORDER BY genero ASC;
+
+-- SELECT COUNT(DISTINCT autor) AS quantidade_autores
+-- FROM livros;
+
+-- SELECT nome, preco
+-- FROM livros
+-- ORDER BY preco DESC
+-- LIMIT 5;
+
+-- SELECT nome, ano_publicacao, genero
+-- FROM livros
+-- WHERE ano_publicacao BETWEEN 2010 AND 2020
+-- ORDER BY ano_publicacao ASC;
