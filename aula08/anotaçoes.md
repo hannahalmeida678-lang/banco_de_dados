@@ -53,6 +53,7 @@ media:
 ```sql
 SELECT AVG(preco) AS media_precos FROM produtos;
 ```
+
 media CORRETA:
 
 ```sql
@@ -94,4 +95,4 @@ AS total_faturamento_por_produto
 FROM produtos;
 ```
 
-___ 
+___
