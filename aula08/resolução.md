@@ -104,3 +104,4 @@ FROM produtos;
 C3. Compare o resultado de C2 com o produto mais caro que apareceu em A3. É o mesmo item? Escreva duas linhas explicando o que essa comparação revela sobre o estoque da loja.
 
  o produto mais caro é o produto com valor imobilizado no estoque.
+ 
