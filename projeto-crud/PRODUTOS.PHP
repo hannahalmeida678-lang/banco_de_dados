@@ -40,6 +40,10 @@ if ($metodo == "PUT"){
 
     $dados = json_decode($json,true);
 
+    if($dados["nome"] == "celular"){
+        echo json_encode(["mensagem"=> "você não pode adicionar esse produto"]);
+    }
+
     $sql = "UPDATE produtos SET nome=?, preco=? WHERE id=?";
 
     $comando = $pdo -> prepare($sql);
