@@ -1,0 +1,8 @@
+-- CREATE TABLE pecas (
+--     id SERIAL PRIMARY KEY,
+--     nome VARCHAR(100) NOT NULL,
+--     categoria VARCHAR(20) NOT NULL CHECK (categoria IN ('eletrica', 'mecanica', 'hidraulica')),
+--     fornecedor VARCHAR(100) NOT NULL,
+--     quantidade INTEGER NOT NULL CHECK (quantidade >= 0),
+--     preco_unitario DECIMAL(10,2) NOT NULL CHECK (preco_unitario > 0)
+-- -- );
