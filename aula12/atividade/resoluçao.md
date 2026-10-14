@@ -16,25 +16,25 @@ CREATE DATABASE (nome da empresa);
 2- criar tabela
 
 ```sql
-CREATE TABLE cadastro_original(
+
+CREATE TABLE cadastro_original (
     funcionario_id INTEGER PRIMARY KEY,
     nome TEXT,
     setor_id INTEGER,
     setor_nome TEXT,
-    treinamento TEXT
+    treinamentos TEXT
 );
 ```
 
 3- inserimos dados:
 
 ```sql
-INSERT INTO cadastro_original VALUES 
-(2, 'victor',10, 'montagem', 'segurança;ferramentas'),
-(1, 'miguel',20, 'manutencao', 'seguranca'),
-(3, 'lucas', 10, 'montagem', 'ferramentas');
+INSERT INTO cadastro_original VALUES
+(11, 'Féboli', 1, 'Producao', 'Integracao;EPI'),
+(12, 'Mayne', 2, 'Qualidade', 'EPI'),
+(13, 'Yasmin', 1, 'Producao', 'Integracao');
 ```
 
-4-  ao realizar a primeira consulta, verificamos que ele coloca dois valores na mesma linha
 
 5- para organizar os dados
 
@@ -60,8 +60,6 @@ ADD PRIMARY KEY (funcionario_id, treinamentos);
  CREATE TABLE funcionarios AS 
  SELECT DISTINCT funcionario_id,nome,setor_id,setor_nome FROM  cadastro_1fn
 ```
-
-> o dinstinct evita copiar linhas iguais mais de uma vez. ou seja, os dois trenamentos do victor, viram um só.
 
 2- o comando CREATE TABLE AS nao tras chaes primarias automaticamene, dessA forma executamos o comando
 
